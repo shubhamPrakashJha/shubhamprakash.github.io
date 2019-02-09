@@ -1,0 +1,147 @@
+/* default*/
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8px;
+    }
+}
+
+figure,
+img,
+section {
+    max-width: 100%;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 100%;
+}
+
+.logo {
+    width: 20%;
+    order: 1;
+}
+
+.header-logo {
+    position: relative;
+    top: auto;
+    width: 100px;
+    height: 100px;
+    float: left;
+    padding: 7%;
+}
+
+.name {
+    width: 80%;
+    order: 2;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.header-title {
+    margin-bottom: 0;
+    font-size: xx-large;
+    color: #2d3c49;
+    font-weight: 100;
+}
+
+.header-subtitle,
+h3 {
+    color: #2d3c49;
+    font-size: medium;
+    font-weight: bolder;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 425px) {
+    .header-subtitle {
+        font-size: small;
+    }
+
+    .header-title {
+        font-size: x-large;
+    }
+
+    .projects {
+        font-size: inherit;
+    }
+}
+
+/* Horizontal line */
+hr {
+    border: 2px solid #7d97ad;
+    width: 100%;
+}
+
+/* Article */
+.main_picture {
+    width: 100%;
+}
+
+.projects {
+    font-size: x-large;
+}
+
+article h3 {
+    color: #7d97ad;
+    margin-bottom: 8px;
+    font-size: xx-large;
+    font-weight: initial;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 33.33%;
+        text-align: center;
+    }
+
+}
+
+.info {
+    line-height: 1px;
+    color: #2d3c49;
+    font-weight: 100;
+}
+
+.info h2 {
+    font-weight: normal;
+}
+
+.info p {
+    font-size: 70%;
+}
+
+/* Footer*/
+footer p {
+    text-align: center;
+    font-size: small;
+}

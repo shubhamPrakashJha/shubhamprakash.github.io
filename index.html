@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <!--<link rel="stylesheet" href="../../Desktop/udacity/webdesigning/css/styles.css">-->
+
+</head>
+<body>
+<main>
+    <header class="header"></header>
+    <hr>
+    <article>
+        <figure>
+            <img src="image/main.png" alt="main picture" class="main_picture">
+        </figure>
+        <br>
+        <h3 class="projects"> Featured Work</h3>
+        <div class="container"></div>
+        <hr>
+    </article>
+    <footer></footer>
+</main>
+<script type="text/template" data-template="header">
+    <div class="header_box logo">
+        <img class="header-logo" src="image/logo.png" alt="iconic view of a cityscape">
+    </div>
+    <div class="header_box name">
+        <h1 class="header-title">{{name}}</h1>
+        <h3 class="header-subtitle">{{role}}</h3>
+    </div>
+</script>
+<script type="text/template" data-template="projects">
+    <section class="box">
+        <figure>
+            <a href="{{url}}" target="_blank">
+                <img src="{{image}}" alt="{{info}}">
+                <div class="info">
+                    <h2>{{title}}</h2>
+                    <p>{{url}}</p>
+                </div>
+            </a>
+        </figure>
+    </section>
+</script>
+<script type="text/template" data-template="footer">
+    <p>Contact me at <a href="mailto:{{email}}">{{email}}</a></p>
+</script>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
